@@ -1,0 +1,252 @@
+* {
+  font-size: 62.5%;
+  background-color: rgba(197, 228, 231, 1);
+}
+
+.the-logo {
+  display: flex;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 92rem;
+  min-height: 48rem;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  justify-content: space-around;
+}
+
+.output {
+  height: min(41.7rem, 100rem);
+
+  background-color: rgba(0, 71, 75, 1);
+  width: 41.3rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.input {
+  height: min(41.7rem, 100rem);
+  background-color: aliceblue;
+  width: 41.3rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.output-first {
+  width: 33.3rem;
+  display: flex;
+  font-size: 7.1rem;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  background-color: rgba(0, 71, 75, 1);
+}
+
+.output-first h1 {
+  background-color: rgba(0, 71, 75, 1);
+  color: rgba(38, 194, 174, 1);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.tip-amount {
+  background-color: rgba(0, 71, 75, 1);
+  color: rgba(38, 194, 174, 1);
+}
+
+.tip-amount h1 {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  background-color: rgba(0, 71, 75, 1);
+}
+
+.tip-amount p {
+  font-size: 1.3rem;
+  background-color: rgba(0, 71, 75, 1);
+}
+
+.dollar {
+  font-size: 4.8rem;
+  background-color: rgba(0, 71, 75, 1);
+  color: rgba(38, 194, 174, 1);
+}
+
+.output button {
+  width: 33.3rem;
+  height: 4.8rem;
+  margin: auto;
+  display: flex;
+
+  font-size: 3rem;
+  justify-content: center;
+  margin-top: 7rem;
+  background-color: rgba(38, 194, 174, 1);
+  color: rgba(0, 71, 75, 1);
+  border: none;
+  padding-top: 1rem;
+  border-radius: 1rem;
+}
+
+.output button:hover {
+  cursor: pointer;
+}
+
+.input-bill {
+  background-color: aliceblue;
+}
+
+.input-bill h1 {
+  color: rgba(94, 122, 125, 1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  background-color: aliceblue;
+}
+
+.input-bill div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4.8rem;
+  background-color: rgba(197, 228, 231, 1);
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.input-bill div:focus-within {
+  border: solid 0.1rem rgba(158, 187, 189, 1);
+}
+
+.input-bill div input {
+  background-color: rgba(243, 249, 250, 1);
+  text-align: end;
+  border: none;
+  margin-right: 1rem;
+  background-color: rgba(197, 228, 231, 1);
+}
+
+.input-bill div input:focus {
+  background-color: rgba(197, 228, 231, 1);
+  text-align: end;
+  border: none;
+  margin-right: 1rem;
+  outline: none;
+  color: rgba(158, 187, 189, 1);
+}
+
+.input-bill div svg {
+  margin-left: 1rem;
+  color: rgba(158, 187, 189, 1);
+  background-color: rgba(197, 228, 231, 1);
+}
+
+.input-bill input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.selected-tip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  background-color: aliceblue;
+}
+
+.selected-tip h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 1.6rem;
+  color: rgba(158, 187, 189, 1);
+  background-color: aliceblue;
+}
+
+.selected-tip button {
+  height: 6rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: rgba(0, 71, 75, 1);
+  border: solid 0.1rem;
+  color: rgba(158, 187, 189, 1);
+
+  font-family: "Space Mono";
+  padding-top: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.selected-tip button:focus {
+  color: rgba(0, 71, 75, 1);
+  background-color: rgba(38, 194, 174, 1);
+}
+
+.selected-tip div {
+  height: 6rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: rgba(0, 71, 75, 1);
+  border: solid 0.1rem;
+  color: rgba(158, 187, 189, 1);
+
+  font-family: "Space Mono";
+  padding-top: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.selected-tip div:hover {
+  color: rgba(0, 71, 75, 1);
+  background-color: rgba(38, 194, 174, 1);
+}
+
+.selected-tip input {
+  text-align: center;
+  width: 11.8rem;
+  font-size: 2.4rem;
+
+  border: solid 0.2rem rgba(38, 194, 174, 1);
+}
+
+.selected-tip input:focus {
+  border: solid 0.2rem rgba(38, 194, 174);
+  outline: none;
+  color: rgba(158, 187, 189, 1);
+}
+
+.number-of-people {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .input {
+    width: 40rem;
+  }
+
+  .the-logo {
+    display: flex;
+    margin: auto;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    max-width: 30rem;
+  }
+
+  .input-bill div input {
+    width: 70%;
+  }
+}
